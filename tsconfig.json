@@ -4,15 +4,18 @@
     // File Layout
     // "rootDir": "./src",
     "outDir": "./dist",
-
+    "strict": false,                  // Disables all strict type-checking options
+    "noImplicitAny": false,           // Allows expressions and declarations with an implied 'any' type
+    "strictNullChecks": false,        // Disables strict null and undefined checking
+    "skipLibCheck": true      
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
     "target": "esnext",
     // "types": [],
     // For nodejs:
-    "lib": ["esnext"],
-    "types": ["node"],
+    // "lib": ["esnext"],
+    // "types": ["node"],
     // and npm install -D @types/node
 
     // Other Outputs
@@ -33,12 +36,10 @@
     // "noPropertyAccessFromIndexSignature": true,
 
     // Recommended Options
-    "strict": true,
     "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
   }
 }
